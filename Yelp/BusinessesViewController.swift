@@ -23,10 +23,10 @@ class BusinessesViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 120
 
-        Business.searchWithTerm("", completion: { (businesses: [Business]!, error: NSError!) -> Void in
+        Business.searchWithTerm("Restaurants", sort: .Distance, categories: [], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
             self.tableView.reloadData()
-        })
+        }
         
         let searchBar = UISearchBar()
         searchBar.sizeToFit()
@@ -60,16 +60,13 @@ class BusinessesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ToMapView" {
+            let navigationView = segue.destinationViewController as! UINavigationController
+            let mapView = navigationView.viewControllers.first as! MapViewController
+            mapView.businesses = self.businesses
+        }
     }
-    */
-
 }
 
 extension BusinessesViewController: UITableViewDelegate, UITableViewDataSource {

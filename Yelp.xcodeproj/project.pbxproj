@@ -18,6 +18,8 @@
 		5B2CC7681C6154E200CAFB2F /* YelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2CC7671C6154E200CAFB2F /* YelpCell.swift */; };
 		5B2CC76C1C62ECEA00CAFB2F /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2CC76B1C62ECEA00CAFB2F /* FilterViewController.swift */; };
 		5B2CC76E1C62F4BA00CAFB2F /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2CC76D1C62F4BA00CAFB2F /* SwitchCell.swift */; };
+		5BC628E41C66D92200CB5B8A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC628E31C66D92200CB5B8A /* DetailView.swift */; };
+		5BC628E61C67DA2B00CB5B8A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC628E51C67DA2B00CB5B8A /* MapViewController.swift */; };
 		90B718C590BD546DEFEF0D61 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		5B2CC7671C6154E200CAFB2F /* YelpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpCell.swift; sourceTree = "<group>"; };
 		5B2CC76B1C62ECEA00CAFB2F /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		5B2CC76D1C62F4BA00CAFB2F /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		5BC628E31C66D92200CB5B8A /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5BC628E51C67DA2B00CB5B8A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		97D8B2E3FFD1AF4F4A707E47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD540129B10DFE60E8C24E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			children = (
 				22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */,
 				5B2CC76B1C62ECEA00CAFB2F /* FilterViewController.swift */,
+				5BC628E31C66D92200CB5B8A /* DetailView.swift */,
+				5BC628E51C67DA2B00CB5B8A /* MapViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 				TargetAttributes = {
 					222D8A5419CCF9F900D2DB53 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 4MR49B8559;
 					};
 					222D8A6919CCF9F900D2DB53 = {
 						CreatedOnToolsVersion = 6.0;
@@ -329,8 +336,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B2CC76C1C62ECEA00CAFB2F /* FilterViewController.swift in Sources */,
+				5BC628E41C66D92200CB5B8A /* DetailView.swift in Sources */,
 				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
+				5BC628E61C67DA2B00CB5B8A /* MapViewController.swift in Sources */,
 				5B2CC76E1C62F4BA00CAFB2F /* SwitchCell.swift in Sources */,
 				222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */,
 				5B2CC7681C6154E200CAFB2F /* YelpCell.swift in Sources */,
@@ -460,10 +469,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Yelp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Purdue-University.Yelp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -475,10 +487,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Yelp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Purdue-University.Yelp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;

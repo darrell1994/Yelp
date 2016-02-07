@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QcI-to-4yy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QcI-to-4yy">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -22,11 +22,11 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YelpCell" rowHeight="105" id="mNz-BD-ijM" customClass="YelpCell" customModule="Yelp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="YelpCell" rowHeight="105" id="mNz-BD-ijM" customClass="YelpCell" customModule="Yelp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mNz-BD-ijM" id="bfH-nu-9Wr">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="104.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIn-WZ-K9d">
@@ -39,10 +39,10 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbr-aV-vNP">
                                                     <rect key="frame" x="96" y="8" width="45" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.8mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btd-oQ-Yd5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" text="0.8mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btd-oQ-Yd5">
                                                     <rect key="frame" x="280" y="11" width="31.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,7 +51,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htx-Zf-gZF">
                                                     <rect key="frame" x="99" y="56" width="53" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAm-Tj-fa5">
@@ -103,7 +103,6 @@
                                             <outlet property="nameLabel" destination="Rbr-aV-vNP" id="feq-Wm-ET7"/>
                                             <outlet property="numberOfReviewsLabel" destination="zAz-2N-bC4" id="ekh-Lv-ngk"/>
                                             <outlet property="ratingImageView" destination="UoZ-fB-CJ0" id="auw-Vp-Ow6"/>
-                                            <segue destination="F57-co-zE3" kind="push" id="tVZ-ov-pvb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -118,17 +117,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tLJ-po-LZb">
-                        <barButtonItem key="leftBarButtonItem" id="AAf-3m-zYn">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SRO-l1-pYQ">
-                                <rect key="frame" x="16" y="11" width="38" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Filter">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" title="Map" id="Nnp-Mg-caF">
                             <connections>
-                                <segue destination="Jtb-dN-NeI" kind="modal" id="IfO-X6-u4K"/>
+                                <segue destination="pGB-fQ-VyP" kind="modal" identifier="ToMapView" id="gTn-bD-HPk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -141,24 +132,45 @@
             </objects>
             <point key="canvasLocation" x="1485" y="338"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="nrB-ma-xi6">
+        <!--Map View Controller-->
+        <scene sceneID="pfO-Rt-lDu">
             <objects>
-                <viewController id="F57-co-zE3" sceneMemberID="viewController">
+                <viewController id="d1M-2O-ZEg" customClass="MapViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Sdp-6Z-HGg"/>
-                        <viewControllerLayoutGuide type="bottom" id="kX3-eN-8Ty"/>
+                        <viewControllerLayoutGuide type="top" id="Fbl-J8-3KY"/>
+                        <viewControllerLayoutGuide type="bottom" id="jlR-zl-1fY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lqz-xO-Bxa">
+                    <view key="view" contentMode="scaleToFill" id="kV7-wU-lNy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3v-vI-ZqG">
+                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s3v-vI-ZqG" firstAttribute="leading" secondItem="kV7-wU-lNy" secondAttribute="leadingMargin" constant="-20" id="F3a-IQ-RjW"/>
+                            <constraint firstItem="jlR-zl-1fY" firstAttribute="top" secondItem="s3v-vI-ZqG" secondAttribute="bottom" id="iU8-3R-fHi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s3v-vI-ZqG" secondAttribute="trailing" constant="-20" id="idk-N2-1ch"/>
+                            <constraint firstItem="s3v-vI-ZqG" firstAttribute="top" secondItem="Fbl-J8-3KY" secondAttribute="bottom" id="wkZ-Us-dCg"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fFj-5G-d6r"/>
+                    <navigationItem key="navigationItem" id="FPe-8O-iEO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kx6-oz-Ep2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="QcI-to-4yy" kind="modal" id="tLy-X3-lR5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="s3v-vI-ZqG" id="Rsq-Hf-E8v"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l3s-oH-X7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlO-ZT-W7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876" y="338"/>
+            <point key="canvasLocation" x="2017" y="1018"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="txu-Mu-o4x">
@@ -186,7 +198,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTA-Op-dox">
                                                     <rect key="frame" x="18" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mdw-Y6-cWm">
@@ -261,6 +273,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpc-vz-FXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2332" y="338"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yxw-Xr-j8J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pGB-fQ-VyP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8HC-PY-wmj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.78823529410000004" green="0.08235294118" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d1M-2O-ZEg" kind="relationship" relationship="rootViewController" id="gou-r8-xiS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joO-9J-MLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="1018"/>
         </scene>
     </scenes>
 </document>
